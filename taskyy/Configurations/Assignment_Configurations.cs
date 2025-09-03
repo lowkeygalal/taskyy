@@ -17,6 +17,7 @@ namespace taskyy.Configurations
             builder.Property(C => C.AssignmentId).UseIdentityColumn();
             builder.Property(C => C.Title).HasColumnType("nvarchar(200)").IsRequired();
             builder.Property(C => C.Description).HasColumnType("nvarchar(max)").IsRequired(false);
+            builder.Property(C => C.DueDate).HasColumnType("datetime").IsRequired();
 
 
         }

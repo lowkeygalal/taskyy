@@ -33,7 +33,7 @@ namespace taskyy.Configurations
 
 
 
-            builder.HasIndex(C=> new { C.StudentId, C.CourseId});
+            builder.HasIndex(C=> new { C.StudentId, C.CourseId}).IsUnique();
         }
     }
 }
